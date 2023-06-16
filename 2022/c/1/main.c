@@ -25,7 +25,6 @@ int main()
     char *numArr = malloc(sizeof(char) * 6);
     memset(numArr, 0, 6);
     int sum = 0;
-    int max = -1;
     int i = 0;
     int top3[3] = {-3,-2,-1};
     while((c = fgetc(f)) != EOF) {
