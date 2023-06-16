@@ -1,2 +1,2 @@
 # advent-of-code
-This is the repo with my solutions for advent of code puzzles in various languages
+This is a repo with my solutions of advent of code puzzles in various languages

@@ -5,8 +5,7 @@
 
 /*
     Author Aleksa Crveni 2023
-    Time: O(n)
-    Space: O(n) ??
+    Time: O(n) + O(3)
 */
 
 void updateTop3(int *arr, int newValue);
