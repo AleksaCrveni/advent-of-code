@@ -9,6 +9,7 @@
     Space: O(n) ??
 */
 
+void updateTop3(int *arr, int newValue);
 int main()
 {
     FILE *f;
@@ -27,13 +28,13 @@ int main()
     int sum = 0;
     int max = -1;
     int i = 0;
+    int top3[3] = {-3,-2,-1};
     while((c = fgetc(f)) != EOF) {
         if (c == '\n') {
             c = fgetc(f);
             sum += atoi(numArr);
             if (c == '\n' || c == EOF) {
-                if (sum > max)
-                    max = sum;
+                updateTop3(top3, sum);
                 sum = 0;
                 memset(numArr, 0, 6);
                 i =0;
@@ -49,10 +50,26 @@ int main()
     }
 
     sum += atoi(numArr);
-    if (sum > max)
-        max = sum;
+   	updateTop3(top3, sum);
 
-    printf("%d", max);
+    printf("TOP 1: %d calories.\n", top3[2]);
+    int totalSum = 0;
+		for (int i =0;i < 3;i++) {
+			totalSum += top3[i];
+		}
+		printf("TOP 3 SUM: %d calories.\n", totalSum);
     fclose(f);
+}
+
+void updateTop3(int *arr, int newValue) {
+		if (arr[0] < newValue)
+			arr[0] = newValue;
+		for (int i = 1; i <= 2; i++) {
+			if (arr[i] < newValue) {
+				arr[i - 1] = arr[i];
+				arr[i] = newValue;
+			} else
+				i = 3;
+		}
 }
 
