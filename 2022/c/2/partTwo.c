@@ -3,15 +3,22 @@
 #include <stdbool.h>
 #include <string.h>
 
-
-
 /*
 	Author Aleksa Crveni 2023
 	Time: O(n)
 
+    Change : 
+    The Elf finishes helping with the tent and sneaks back over to you.
+    "Anyway, the second column says how the round needs to end: X means you need to lose,
+    Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
+
 	A, X -> Rock
 	B, Y -> Paper
 	C, Z -> Scissors
+    
+    X -> LOST
+    Y -> DRAW
+    Z -> WIN
 
 	Paper > Rock
 	Scizzors > Paper
@@ -53,32 +60,32 @@ int main()
 			p2 = input[2];
 
 			if (p2 == 'X') {
-				totalSum += 1;
 				if (p1 == 'A')
 					totalSum += 3;
-				else if (p1 == 'C')
-					totalSum += 6;
-				else if (p1 != 'B')
-					printf("NOT MATCH X");
-			} else if (p2 == 'Y') {
-				totalSum += 2;
-				if (p1 == 'B')
-					totalSum += 3;
-				else if (p1 == 'A')
-					totalSum += 6;
-				else if (p1 != 'C')
-					printf("NOT MATCH B");
-			} else if (p2 == 'Z') {
-				totalSum += 3;
-				if (p1 == 'C')
-					totalSum += 3;
 				else if (p1 == 'B')
-					totalSum += 6;
-				else if (p1 != 'A')
-					printf("NOT MATCH C");
+					totalSum += 1;
+				else if (p1 == 'C')
+					totalSum += 2;
+			} else if (p2 == 'Y') {
+				totalSum += 3;
+				if (p1 == 'A')
+					totalSum += 1;
+				else if (p1 == 'B')
+					totalSum += 2;
+				else if (p1 == 'C')
+					totalSum += 3;
+			} else if (p2 == 'Z') {
+				totalSum += 6;
+				if (p1 == 'A')
+					totalSum += 2;
+				else if (p1 == 'B')
+					totalSum += 3;
+				else if (p1 == 'C')
+					totalSum += 1;
 			} else {
 				printf("NOT MATCH");
 			}
 		}
+
 		printf("%d", totalSum);
 }
