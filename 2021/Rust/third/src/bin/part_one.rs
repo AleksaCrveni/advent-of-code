@@ -5,10 +5,10 @@ use std::io::{BufRead, BufReader};
 
 fn main() {
     let simple = false;
-    let mut path = "input1.txt";
+    let mut path = "input.txt";
 
     if simple {
-        path = "input1Simple.txt";
+        path = "inputSimple.txt";
     }
 
     let file = match File::open(path) {
