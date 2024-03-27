@@ -62,7 +62,6 @@ second_part :: proc(byte_arr: []byte) {
     
   sum := 0
   for i in 0..< len(top3) {
-    fmt.printf("\n%v", top3[i])
     sum += top3[i]
   }
 
