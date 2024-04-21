@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DanielGavin/ols/master/misc/ols.schema.json",
+  "collections": [
+      {
+          "name": "core",
+          "path": "C:\\odin\\Odin\\core"
+      },
+      {
+          "name":  "shared",
+          "path": "./shared"
+      },
+      {
+          "name": "src",
+          "path": "./src"
+      },
+      {
+          "name": "base",
+          "path": "C:\\odin\\Odin\\base"
+      }
+  ],
+  "enable_document_symbols": true,
+  "enable_semantic_tokens": false,
+  "enable_hover": true,
+  "enable_snippets": true,
+  "odin_command": "C:\\odin\\Odin",
+  "enable_inlay_hints": true,
+  "profile": "default",
+  "profiles": [
+      { "name": "default", "checker_path": ["src"]}
+  ]
+}

@@ -4,6 +4,8 @@ import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:strconv"
+import util "../shared"
+
 main :: proc() { 
   sample: bool = false
   filename := "input.txt"
@@ -12,20 +14,13 @@ main :: proc() {
   }
 
   // allocating on heap, but we could allocate on stack if we declare variable here and pass it to be filled in
-  data, ok := read_file(filename)
+  data, ok := util.read_file_original(filename)
   if !ok {
     panic("err reading file")
   }
 
   first_part(data)
   second_part(data)
-}
-
-read_file :: proc(filename: string) -> (data: []byte, ok: bool) {
-  data, ok = os.read_entire_file(filename, context.allocator)
-  if !ok do return 
-  //defer delete(data)
-  return
 }
 
 first_part :: proc(byte_arr: []byte) {
