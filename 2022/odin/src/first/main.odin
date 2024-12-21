@@ -4,10 +4,10 @@ import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:strconv"
-import util "../shared"
+import util "../../shared"
 
 main :: proc() { 
-  sample: bool = false
+  sample: bool = true
   filename := "input.txt"
   if sample {
     filename = "input_sample.txt"
@@ -36,6 +36,7 @@ first_part :: proc(byte_arr: []byte) {
       }
       current_cal = 0
     }
+    fmt.println(line)
   }
 
   fmt.printf("Part One Result: %v", max_cal)
