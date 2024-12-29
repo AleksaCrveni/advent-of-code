@@ -20,17 +20,12 @@ for (int i = 0; i < mem.Length; i++)
   }
 }
 
-
-
 P1(grid);
 P2(grid);
-
 Console.ReadKey();
 
 void P1(char[,] grid)
 {
-
-  
   List<(int, int)> directions = new List<(int, int)>();
  
   for (int i = -1; i < 2; i++)
@@ -57,10 +52,6 @@ void P1(char[,] grid)
   Console.WriteLine($"P1 sum is {sum}");
 
 }
-
-
-
-
 
 void P2(char[,] grid)
 {
