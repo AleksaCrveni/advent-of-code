@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol 2", "Sol 2\Sol 2.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol 3", "Sol 3\Sol 3.csproj", "{52FF4599-5374-41CB-92CA-C08BF68384F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sol 4", "Sol 4\Sol 4.csproj", "{84CC8B0B-9AD0-4618-B9FD-D13CF08273E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sol 4", "Sol 4\Sol 4.csproj", "{84CC8B0B-9AD0-4618-B9FD-D13CF08273E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sol 5", "Sol 5\Sol 5.csproj", "{F187E398-B1B5-4BD5-921E-40FA0B89A927}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{84CC8B0B-9AD0-4618-B9FD-D13CF08273E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84CC8B0B-9AD0-4618-B9FD-D13CF08273E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84CC8B0B-9AD0-4618-B9FD-D13CF08273E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F187E398-B1B5-4BD5-921E-40FA0B89A927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F187E398-B1B5-4BD5-921E-40FA0B89A927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F187E398-B1B5-4BD5-921E-40FA0B89A927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F187E398-B1B5-4BD5-921E-40FA0B89A927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
