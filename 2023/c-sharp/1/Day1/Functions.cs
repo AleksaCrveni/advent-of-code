@@ -112,6 +112,7 @@ public static class Functions
 
   private static int GetDigitFromText(string text)
   {
+    // TODO: Optimize this
     if (text.Contains("one"))
       return 1;
     if (text.Contains("two"))
