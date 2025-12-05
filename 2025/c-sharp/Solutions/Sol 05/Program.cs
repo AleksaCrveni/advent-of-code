@@ -1,7 +1,4 @@
 ﻿
-using Sol_05;
-using System;
-
 bool sample = false;
 string path = "input.txt";
 if (sample)
